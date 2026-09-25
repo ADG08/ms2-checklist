@@ -1,5 +1,6 @@
 export const sitePages = [
-  { id: "tracker", path: "/", soon: false },
+  { id: "home", path: "/", soon: false },
+  { id: "tracker", path: "/shells", soon: false },
   { id: "forum", path: "/forum", soon: true },
 ] as const;
 
@@ -8,7 +9,7 @@ export type UpcomingPage = Extract<(typeof sitePages)[number], { soon: true }>["
 export const siteLanguages = ["fr", "en", "es"] as const;
 export type SiteLanguage = (typeof siteLanguages)[number];
 export const sectionPaths = {
-  shell: "",
+  shell: "shells",
   weapon: "weapons",
   sidearm: "sidearms",
   beacon: "beacons",
@@ -52,8 +53,7 @@ export function sectionFromPath(pathname: string): RoutedSection {
 
 export function hrefForSection(section: RoutedSection, language: SiteLanguage = "fr"): string {
   const prefix = language === "fr" ? "" : `/${language}`;
-  const sectionPath = sectionPaths[section];
-  return sectionPath ? `${prefix}/${sectionPath}` : `${prefix}/`;
+  return `${prefix}/${sectionPaths[section]}`;
 }
 
 export function isReady(page: SitePage): boolean {

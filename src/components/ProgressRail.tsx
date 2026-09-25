@@ -13,12 +13,12 @@ type Props = Readonly<{
   overall: SectionStats;
   sections: readonly Section[];
   active: ChecklistSectionId;
-  hrefForSection: (id: ChecklistSectionId) => string;
+  onSelect: (id: ChecklistSectionId) => void;
   header?: ReactNode;
   extra?: ReactNode;
 }>;
 
-export function ProgressRail({ labelId, title, overall, sections, active, hrefForSection, header, extra }: Props) {
+export function ProgressRail({ labelId, title, overall, sections, active, onSelect, header, extra }: Props) {
   const overallPct = percent(overall.done, overall.total);
   return (
     <>
@@ -40,17 +40,18 @@ export function ProgressRail({ labelId, title, overall, sections, active, hrefFo
         {sections.map((section) => {
           const done = section.stats.done === section.stats.total;
           return (
-            <a
+            <button
               key={section.id}
+              type="button"
               aria-current={active === section.id ? "page" : undefined}
               className={`${active === section.id ? "active" : ""}${done ? " full" : ""}`}
-              href={hrefForSection(section.id)}
+              onClick={() => onSelect(section.id)}
             >
               <span>{section.label}</span>
               <small>
                 {section.stats.done}/{section.stats.total}
               </small>
-            </a>
+            </button>
           );
         })}
       </nav>

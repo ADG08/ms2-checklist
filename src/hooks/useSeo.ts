@@ -6,6 +6,9 @@ const ORIGIN = "https://ms2checklist.com";
 
 const copy = {
   fr: {
+    homeTitle: "Mortal Shell II Checklist, achievements et progression",
+    homeDescription:
+      "Checklist communautaire Mortal Shell II : succès, shells, armes, boss et tarstones. Importe ta sauvegarde localement et suis ta progression.",
     title: (section: string) => `${section} | Checklist Mortal Shell II`,
     description:
       "Checklist interactive Mortal Shell II : succès, shells, armes, boss, tarstones et plus. Importe ta sauvegarde localement et suis ta progression.",
@@ -14,6 +17,9 @@ const copy = {
     locale: "fr_FR",
   },
   en: {
+    homeTitle: "Mortal Shell II Checklist, Achievements & Progress Tracker",
+    homeDescription:
+      "Community Mortal Shell II checklist for achievements, shells, weapons, bosses and tarstones. Import your save locally and track progress.",
     title: (section: string) => `${section} | Mortal Shell II Checklist`,
     description:
       "Interactive Mortal Shell II checklist for achievements, shells, weapons, bosses, tarstones and more. Import your save locally and track progress.",
@@ -22,6 +28,9 @@ const copy = {
     locale: "en_US",
   },
   es: {
+    homeTitle: "Checklist de Mortal Shell II, logros y progreso",
+    homeDescription:
+      "Checklist comunitaria de Mortal Shell II para logros, shells, armas, jefes y tarstones. Importa tu partida localmente y sigue tu progreso.",
     title: (section: string) => `${section} | Checklist de Mortal Shell II`,
     description:
       "Checklist interactiva de Mortal Shell II: logros, shells, armas, jefes, tarstones y más. Importa tu partida localmente y sigue tu progreso.",
@@ -54,8 +63,17 @@ export function useSeo(page: SitePage, section: ProgressTab, sectionName: string
     const language = languageFromPath(globalThis.location.pathname);
     const localized = copy[language];
     const isTracker = page === "tracker";
-    const title = isTracker ? localized.title(sectionName) : localized.forumTitle;
-    const description = isTracker ? localized.description : localized.forumDescription;
+    const isHome = page === "home";
+    const indexable = page !== "forum";
+    let title: string = localized.forumTitle;
+    let description: string = localized.forumDescription;
+    if (isHome) {
+      title = localized.homeTitle;
+      description = localized.homeDescription;
+    } else if (isTracker) {
+      title = localized.title(sectionName);
+      description = localized.description;
+    }
     const canonicalPath = isTracker ? hrefForSection(section, language) : hrefFor(page, language);
     const canonical = new URL(canonicalPath, ORIGIN).href;
     const image = `${ORIGIN}/og-image.png`;
@@ -64,7 +82,7 @@ export function useSeo(page: SitePage, section: ProgressTab, sectionName: string
     setMeta('meta[name="description"]', { name: "description", content: description });
     setMeta('meta[name="robots"]', {
       name: "robots",
-      content: isTracker ? "index, follow, max-image-preview:large" : "noindex, follow",
+      content: indexable ? "index, follow, max-image-preview:large" : "noindex, follow",
     });
     setMeta('meta[property="og:title"]', { property: "og:title", content: title });
     setMeta('meta[property="og:description"]', { property: "og:description", content: description });
@@ -96,19 +114,25 @@ export function useSeo(page: SitePage, section: ProgressTab, sectionName: string
     });
 
     const structuredData = document.querySelector<HTMLScriptElement>("#structured-data");
-    if (structuredData && isTracker) {
+    if (structuredData && indexable) {
       structuredData.textContent = JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "WebApplication",
+        "@type": isHome ? "WebSite" : "WebApplication",
         name: "MS2 Checklist",
         url: canonical,
         description,
-        applicationCategory: "GameApplication",
-        operatingSystem: "Any",
         inLanguage: language,
         isAccessibleForFree: true,
-        offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+        ...(isHome
+          ? {}
+          : {
+              applicationCategory: "GameApplication",
+              operatingSystem: "Any",
+              offers: { "@type": "Offer", price: "0", priceCurrency: "EUR" },
+            }),
       });
+    } else if (structuredData) {
+      structuredData.textContent = "{}";
     }
   }, [page, section, sectionName]);
 }

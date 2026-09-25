@@ -2,7 +2,7 @@ import { writeFile } from "node:fs/promises";
 
 const origin = "https://ms2checklist.com";
 const languages = ["fr", "en", "es"];
-const sections = ["", "weapons", "sidearms", "beacons", "tarstones", "bosses", "fragments", "achievements"];
+const sections = ["", "shells", "weapons", "sidearms", "beacons", "tarstones", "bosses", "fragments", "achievements"];
 
 function url(language, section) {
   const prefix = language === "fr" ? "" : `/${language}`;

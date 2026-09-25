@@ -8,6 +8,7 @@ const resources = {
   fr: {
     translation: {
       nav: {
+        home: "Accueil",
         tracker: "Tracker",
         forum: "Forum",
         map: "Carte",
@@ -28,6 +29,18 @@ const resources = {
       },
       hero: {
         privacy: "La progression reste dans ton navigateur. Une save est optionnelle et n'est jamais envoyée.",
+      },
+      home: {
+        kicker: "Tracker communautaire",
+        title: "Checklist Mortal Shell II",
+        intro:
+          "Retrouve les succès, shells, armes, boss, beacons, fragments et tarstones. Coche ta progression à la main ou importe ta sauvegarde localement, sans compte et sans envoi de fichier.",
+        cta: "Ouvrir la checklist",
+        sectionsTitle: "Tout suivre dans Mortal Shell II",
+        itemCount: "{{count}} éléments",
+        aboutTitle: "Pensé pour le 100 %",
+        aboutText:
+          "MS2 Checklist est un fan site indépendant construit avec la communauté pour centraliser les découvertes, signaler les objectifs manquables et aider chaque joueur à terminer sa partie.",
       },
       seo: {
         title: "La checklist communautaire pour Mortal Shell II",
@@ -98,6 +111,7 @@ const resources = {
   en: {
     translation: {
       nav: {
+        home: "Home",
         tracker: "Tracker",
         forum: "Forum",
         map: "Map",
@@ -118,6 +132,18 @@ const resources = {
       },
       hero: {
         privacy: "Progress stays in your browser. A save is optional and never uploaded.",
+      },
+      home: {
+        kicker: "Community tracker",
+        title: "Mortal Shell II Checklist",
+        intro:
+          "Track achievements, shells, weapons, bosses, beacons, fragments and tarstones. Check progress manually or import your save locally, with no account and no file upload.",
+        cta: "Open the checklist",
+        sectionsTitle: "Track everything in Mortal Shell II",
+        itemCount: "{{count}} items",
+        aboutTitle: "Built for 100% completion",
+        aboutText:
+          "MS2 Checklist is an independent fan site built with the community to gather discoveries, flag missable objectives and help every player complete the game.",
       },
       seo: {
         title: "The community checklist for Mortal Shell II",
@@ -188,6 +214,7 @@ const resources = {
   es: {
     translation: {
       nav: {
+        home: "Inicio",
         tracker: "Tracker",
         forum: "Foro",
         map: "Mapa",
@@ -208,6 +235,18 @@ const resources = {
       },
       hero: {
         privacy: "El progreso se guarda en tu navegador. La partida es opcional y nunca se envia.",
+      },
+      home: {
+        kicker: "Tracker comunitario",
+        title: "Checklist de Mortal Shell II",
+        intro:
+          "Sigue logros, shells, armas, jefes, beacons, fragmentos y tarstones. Marca tu progreso o importa tu partida localmente, sin cuenta y sin enviar archivos.",
+        cta: "Abrir la checklist",
+        sectionsTitle: "Sigue todo en Mortal Shell II",
+        itemCount: "{{count}} elementos",
+        aboutTitle: "Creada para completar el 100 %",
+        aboutText:
+          "MS2 Checklist es un fan site independiente creado con la comunidad para reunir descubrimientos, señalar objetivos perdibles y ayudar a completar el juego.",
       },
       seo: {
         title: "La checklist comunitaria de Mortal Shell II",

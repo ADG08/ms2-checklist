@@ -3,10 +3,11 @@ import { useTranslation } from "react-i18next";
 import { AchievementToasts } from "./components/AchievementToasts";
 import { Checklist } from "./components/Checklist";
 import { ComingSoon } from "./components/ComingSoon";
+import { Home } from "./components/Home";
 import { LanguageSwitch } from "./components/LanguageSwitch";
 import { ProgressRail } from "./components/ProgressRail";
 import { SaveActions } from "./components/SaveActions";
-import { itemsBySection, progressTabs } from "./data/checklist";
+import { itemsBySection, progressTabs, type ProgressTab } from "./data/checklist";
 import { useSeo } from "./hooks/useSeo";
 import { useTracker } from "./hooks/useTracker";
 import { hrefFor, hrefForSection, languageFromPath, pageFromPath, sectionFromPath, sitePages } from "./lib/route";
@@ -16,7 +17,7 @@ export function App() {
   const tracker = useTracker();
   const page = pageFromPath(globalThis.location.pathname);
   const language = languageFromPath(globalThis.location.pathname);
-  const tab = sectionFromPath(globalThis.location.pathname);
+  const [tab, setTab] = useState<ProgressTab>(() => sectionFromPath(globalThis.location.pathname));
   const [open, setOpen] = useState(false);
   const menuId = useId();
   const trackerPage = page === "tracker";
@@ -38,8 +39,14 @@ export function App() {
   }, []);
 
   useEffect(() => {
+    const onPopState = () => setTab(sectionFromPath(globalThis.location.pathname));
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
+
+  useEffect(() => {
     setOpen(false);
-  }, [page]);
+  }, [page, tab]);
 
   useEffect(() => {
     document.body.classList.toggle("rail-open", open);
@@ -53,7 +60,7 @@ export function App() {
       </a>
 
       <header className="site-top">
-        <a className="site-logo" href={hrefFor("tracker", language)} aria-label="MS2 Checklist">
+        <a className="site-logo" href={hrefFor("home", language)} aria-label="MS2 Checklist">
           <img src="/logo-checklist.webp" alt="" width="97" height="54" />
         </a>
         <nav className="site-topnav" aria-label={t("nav.site")}>
@@ -89,7 +96,10 @@ export function App() {
                 title={t("nav.progress")}
                 overall={tracker.overall}
                 active={tab}
-                hrefForSection={(section) => hrefForSection(section, language)}
+                onSelect={(section) => {
+                  setTab(section);
+                  globalThis.history.pushState(null, "", hrefForSection(section, language));
+                }}
                 header={
                   <SaveActions
                     busy={tracker.busy}
@@ -119,7 +129,9 @@ export function App() {
         ) : null}
 
         <main id="content" className="site-main" tabIndex={-1}>
-          {page === "tracker" ? (
+          {page === "home" ? (
+            <Home />
+          ) : page === "tracker" ? (
             <Checklist
               section={tab}
               title={sectionName}
