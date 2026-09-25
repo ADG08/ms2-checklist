@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /forum
+Disallow: /en/forum
+Disallow: /es/forum
+
+Sitemap: https://ms2checklist.com/sitemap.xml

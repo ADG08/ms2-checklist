@@ -1,0 +1,17 @@
+{
+  "name": "Mortal Shell II Checklist",
+  "short_name": "MS2 Checklist",
+  "description": "Checklist interactive et suivi de progression pour Mortal Shell II.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0c0b",
+  "theme_color": "#0b0c0b",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ]
+}

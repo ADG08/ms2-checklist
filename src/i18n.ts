@@ -2,6 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import esItems from "./locales/es-items.json";
 import frItems from "./locales/fr-items.json";
+import { languageFromPath } from "./lib/route";
 
 const resources = {
   fr: {
@@ -28,12 +29,28 @@ const resources = {
       hero: {
         privacy: "La progression reste dans ton navigateur. Une save est optionnelle et n'est jamais envoyée.",
       },
+      seo: {
+        title: "La checklist communautaire pour Mortal Shell II",
+        description:
+          "Prépare ton 100 %, retrouve les succès manquables et suis les shells, armes, boss, beacons, fragments et tarstones dans un seul outil gratuit.",
+        achievementsTitle: "Achievements et succès",
+        achievementsText:
+          "Consulte la liste des achievements de Mortal Shell II, filtre les objectifs missables et coche chaque succès terminé.",
+        saveTitle: "Tracker de sauvegarde privé",
+        saveText:
+          "Importe ton fichier WorldState directement dans ton navigateur. Son contenu reste sur ton appareil et n'est envoyé à aucun serveur.",
+        communityTitle: "Construit avec la communauté",
+        communityText:
+          "MS2 Checklist est un fan site indépendant pensé pour partager les découvertes, corriger les emplacements et aider les joueurs à terminer le jeu.",
+      },
       upload: {
         loading: "Lecture...",
         import: "Importer une save",
         drop: "Deposer ou cliquer",
       },
       checklist: {
+        heading: "Checklist Mortal Shell II : {{section}}",
+        intro: "Suis ta progression dans Mortal Shell II, coche chaque élément ou importe ta sauvegarde localement. Aucune donnée n'est envoyée.",
         search: "Filtrer...",
         hideDone: "Masquer ce qui est fait",
         onlyMissable: "Missables",
@@ -102,12 +119,28 @@ const resources = {
       hero: {
         privacy: "Progress stays in your browser. A save is optional and never uploaded.",
       },
+      seo: {
+        title: "The community checklist for Mortal Shell II",
+        description:
+          "Plan your 100% run, find missable achievements and track every shell, weapon, boss, beacon, fragment and tarstone in one free tool.",
+        achievementsTitle: "Achievements and completion",
+        achievementsText:
+          "Browse the Mortal Shell II achievement list, filter missable objectives and check off every completed achievement.",
+        saveTitle: "Private save tracker",
+        saveText:
+          "Import your WorldState file directly in your browser. It stays on your device and is never uploaded to a server.",
+        communityTitle: "Built with the community",
+        communityText:
+          "MS2 Checklist is an independent fan site for sharing discoveries, correcting locations and helping players complete the game.",
+      },
       upload: {
         loading: "Reading...",
         import: "Import save",
         drop: "Drop or click",
       },
       checklist: {
+        heading: "Mortal Shell II Checklist: {{section}}",
+        intro: "Track your Mortal Shell II progress, check off every item or import your save locally. No data ever leaves your browser.",
         search: "Filter...",
         hideDone: "Hide completed",
         onlyMissable: "Missables",
@@ -176,12 +209,28 @@ const resources = {
       hero: {
         privacy: "El progreso se guarda en tu navegador. La partida es opcional y nunca se envia.",
       },
+      seo: {
+        title: "La checklist comunitaria de Mortal Shell II",
+        description:
+          "Prepara tu partida al 100 %, encuentra logros perdibles y sigue shells, armas, jefes, beacons, fragmentos y tarstones en una herramienta gratuita.",
+        achievementsTitle: "Logros y progreso",
+        achievementsText:
+          "Consulta la lista de logros de Mortal Shell II, filtra los objetivos perdibles y marca cada logro completado.",
+        saveTitle: "Tracker de partida privado",
+        saveText:
+          "Importa tu archivo WorldState directamente en el navegador. Permanece en tu dispositivo y nunca se envía a un servidor.",
+        communityTitle: "Creado con la comunidad",
+        communityText:
+          "MS2 Checklist es un fan site independiente para compartir descubrimientos, corregir ubicaciones y ayudar a los jugadores a completar el juego.",
+      },
       upload: {
         loading: "Leyendo...",
         import: "Importar partida",
         drop: "Soltar o clic",
       },
       checklist: {
+        heading: "Checklist de Mortal Shell II: {{section}}",
+        intro: "Sigue tu progreso en Mortal Shell II, marca cada elemento o importa tu partida localmente. Ningún dato sale de tu navegador.",
         search: "Filtrar...",
         hideDone: "Ocultar lo completado",
         onlyMissable: "Missables",
@@ -230,7 +279,7 @@ const resources = {
 
 void i18n.use(initReactI18next).init({
   resources,
-  lng: localStorage.getItem("ms2-language") ?? "fr",
+  lng: languageFromPath(globalThis.location.pathname),
   fallbackLng: "en",
   interpolation: { escapeValue: false },
   initAsync: false,

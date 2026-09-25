@@ -6,18 +6,22 @@ import { ComingSoon } from "./components/ComingSoon";
 import { LanguageSwitch } from "./components/LanguageSwitch";
 import { ProgressRail } from "./components/ProgressRail";
 import { SaveActions } from "./components/SaveActions";
-import { itemsBySection, progressTabs, type ProgressTab } from "./data/checklist";
+import { itemsBySection, progressTabs } from "./data/checklist";
+import { useSeo } from "./hooks/useSeo";
 import { useTracker } from "./hooks/useTracker";
-import { hrefFor, pageFromPath, sitePages } from "./lib/route";
+import { hrefFor, hrefForSection, languageFromPath, pageFromPath, sectionFromPath, sitePages } from "./lib/route";
 
 export function App() {
   const { t, i18n } = useTranslation();
   const tracker = useTracker();
   const page = pageFromPath(globalThis.location.pathname);
-  const [tab, setTab] = useState<ProgressTab>("shell");
+  const language = languageFromPath(globalThis.location.pathname);
+  const tab = sectionFromPath(globalThis.location.pathname);
   const [open, setOpen] = useState(false);
   const menuId = useId();
   const trackerPage = page === "tracker";
+  const sectionName = t(`checklist.sections.${tab}`);
+  useSeo(page, tab, sectionName);
 
   useEffect(() => {
     document.documentElement.lang = i18n.resolvedLanguage ?? "fr";
@@ -35,7 +39,7 @@ export function App() {
 
   useEffect(() => {
     setOpen(false);
-  }, [page, tab]);
+  }, [page]);
 
   useEffect(() => {
     document.body.classList.toggle("rail-open", open);
@@ -49,12 +53,12 @@ export function App() {
       </a>
 
       <header className="site-top">
-        <a className="site-logo" href="/" aria-label="MS2 Checklist">
+        <a className="site-logo" href={hrefFor("tracker", language)} aria-label="MS2 Checklist">
           <img src="/logo-checklist.webp" alt="" width="97" height="54" />
         </a>
         <nav className="site-topnav" aria-label={t("nav.site")}>
           {sitePages.map((item) => (
-            <a key={item.id} href={hrefFor(item.id)} aria-current={page === item.id ? "page" : undefined}>
+            <a key={item.id} href={hrefFor(item.id, language)} aria-current={page === item.id ? "page" : undefined}>
               {t(`nav.${item.id}`)}
               {item.soon ? <small>{t("nav.soon")}</small> : null}
             </a>
@@ -85,7 +89,7 @@ export function App() {
                 title={t("nav.progress")}
                 overall={tracker.overall}
                 active={tab}
-                onSelect={setTab}
+                hrefForSection={(section) => hrefForSection(section, language)}
                 header={
                   <SaveActions
                     busy={tracker.busy}
@@ -98,7 +102,7 @@ export function App() {
                 extra={
                   <nav className="site-rail-pages" aria-label={t("nav.site")}>
                     {sitePages.map((item) => (
-                      <a key={item.id} href={hrefFor(item.id)} aria-current={page === item.id ? "page" : undefined}>
+                      <a key={item.id} href={hrefFor(item.id, language)} aria-current={page === item.id ? "page" : undefined}>
                         {t(`nav.${item.id}`)}
                       </a>
                     ))}
@@ -118,7 +122,7 @@ export function App() {
           {page === "tracker" ? (
             <Checklist
               section={tab}
-              title={t(`checklist.sections.${tab}`)}
+              title={sectionName}
               items={itemsBySection[tab]}
               checked={tracker.checked}
               stats={tracker.stats[tab]}

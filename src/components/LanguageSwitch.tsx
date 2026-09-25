@@ -1,27 +1,28 @@
 import { useTranslation } from "react-i18next";
-import i18n from "../i18n";
+import { hrefFor, hrefForSection, pageFromPath, sectionFromPath, siteLanguages } from "../lib/route";
 
-const LANGUAGES = Object.keys(i18n.options.resources ?? { fr: true, en: true, es: true });
 const STORAGE_KEY = "ms2-language";
 
 export function LanguageSwitch() {
   const { i18n: instance } = useTranslation();
   const current = instance.resolvedLanguage ?? "fr";
+  const page = pageFromPath(globalThis.location.pathname);
+  const section = sectionFromPath(globalThis.location.pathname);
 
   return (
     <span className="site-langs">
-      {LANGUAGES.map((lang) => (
-        <button
+      {siteLanguages.map((lang) => (
+        <a
           key={lang}
-          type="button"
           aria-current={current === lang ? "true" : undefined}
+          href={page === "tracker" ? hrefForSection(section, lang) : hrefFor(page, lang)}
+          hrefLang={lang}
           onClick={() => {
             localStorage.setItem(STORAGE_KEY, lang);
-            void instance.changeLanguage(lang);
           }}
         >
           {lang.toUpperCase()}
-        </button>
+        </a>
       ))}
     </span>
   );

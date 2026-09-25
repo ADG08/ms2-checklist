@@ -46,7 +46,8 @@ export function Checklist({ section, title, items, checked, stats, onToggle }: P
     <>
       <header className="site-head">
         <div>
-          <h1>{title}</h1>
+          <h1>{t("checklist.heading", { section: title })}</h1>
+          <p className="site-intro">{t("checklist.intro")}</p>
           <div className="site-head-meta">
             <p>{subtitle}</p>
             <button type="button" className="site-hide" aria-pressed={hideDone} onClick={() => setHideDone((value) => !value)}>
@@ -111,6 +112,24 @@ export function Checklist({ section, title, items, checked, stats, onToggle }: P
       {visible.length === 0 ? (
         <p className="site-empty">{hideDone && stats.done === stats.total ? t("checklist.allDone") : t("checklist.empty")}</p>
       ) : null}
+      <section className="site-seo">
+        <h2>{t("seo.title")}</h2>
+        <p>{t("seo.description")}</p>
+        <div>
+          <article>
+            <h3>{t("seo.achievementsTitle")}</h3>
+            <p>{t("seo.achievementsText")}</p>
+          </article>
+          <article>
+            <h3>{t("seo.saveTitle")}</h3>
+            <p>{t("seo.saveText")}</p>
+          </article>
+          <article>
+            <h3>{t("seo.communityTitle")}</h3>
+            <p>{t("seo.communityText")}</p>
+          </article>
+        </div>
+      </section>
     </>
   );
 }
