@@ -1,0 +1,363 @@
+{
+  "ach-001": {
+    "name": "Vous êtes plus qu'une arme",
+    "description": "Obtenez une enveloppe, une arme et une arme secondaire."
+  },
+  "ach-003": {
+    "name": "Enfin au bercail",
+    "description": "Atteignez Fort Medula."
+  },
+  "ach-002": {
+    "name": "Midsommar ?",
+    "description": "Rejoignez le festival.",
+    "warning": "Prends la couronne de fleurs de Marigold dans le prologue avant de partir. Impossible en NG+.",
+    "warningBefore": "de quitter le prologue"
+  },
+  "ach-030": {
+    "name": "Forever Alone ?",
+    "description": "Déverrouillez Tiel."
+  },
+  "ach-034": {
+    "name": "Arrivée",
+    "description": "Déverrouillez Proxima."
+  },
+  "ach-004": {
+    "name": "À la recherche d'un temps perdu",
+    "description": "Visionnez votre premier souvenir d'enveloppe."
+  },
+  "ach-005": {
+    "name": "Entailles profondes",
+    "description": "Déverrouillez la dague et la hache."
+  },
+  "ach-017": {
+    "name": "À l'ancienne",
+    "description": "Déverrouillez l'arbalète oubliée."
+  },
+  "ach-020": {
+    "name": "Le phénix des autos de ces bois",
+    "description": "Vainquez Magdalena, Dame des Bois."
+  },
+  "ach-011": {
+    "name": "Vieux singe et grimaces",
+    "description": "Déverrouillez la hache de guerre de vétéran."
+  },
+  "ach-032": {
+    "name": "Vengeance !",
+    "description": "Déverrouillez Eredrim."
+  },
+  "ach-006": {
+    "name": "Gros dossier",
+    "description": "Déverrouillez la grande lame du Martyr."
+  },
+  "ach-021": {
+    "name": "De la viande fraîche au menu",
+    "description": "Vainquez l'Enfant perdu."
+  },
+  "ach-035": {
+    "name": "Mon frère",
+    "description": "Déverrouillez Smert."
+  },
+  "ach-040": {
+    "name": "Fort attachement",
+    "description": "Atteignez le maximum de fusion avec une enveloppe auprès de la Gardienne des enveloppes."
+  },
+  "ach-036": {
+    "name": "Sans cœur",
+    "description": "Déverrouillez Gragu."
+  },
+  "ach-016": {
+    "name": "Hache vole",
+    "description": "Déverrouillez le trébuchet à haches récupéré."
+  },
+  "ach-022": {
+    "name": "Du plomb dans la tête",
+    "description": "Vainquez le Captif sans nom."
+  },
+  "ach-010": {
+    "name": "Combat à deux armes",
+    "description": "Déverrouillez le katan'hache."
+  },
+  "ach-007": {
+    "name": "Armement de pointe",
+    "description": "Déverrouillez l'aiguille noire."
+  },
+  "ach-013": {
+    "name": "Vieille pétoire",
+    "description": "Déverrouillez la triarche à répétition."
+  },
+  "ach-008": {
+    "name": "Mécanisme d'horlogerie",
+    "description": "Déverrouillez la faux mécanique."
+  },
+  "ach-012": {
+    "name": "Piercing",
+    "description": "Déverrouillez l'hystrix en cage."
+  },
+  "ach-033": {
+    "name": "L'alchimiste",
+    "description": "Déverrouillez Sariel."
+  },
+  "ach-041": {
+    "name": "La force toute-puissante",
+    "description": "Maximisez une arme à la Forge fossile."
+  },
+  "ach-009": {
+    "name": "Martel en tête",
+    "description": "Déverrouillez le marteau d'obsidienne."
+  },
+  "ach-024": {
+    "name": "Quelque chose dans les profondeurs...",
+    "description": "Vainquez Hexapod."
+  },
+  "ach-026": {
+    "name": "Ça brûûûle",
+    "description": "Vainquez Droeg, le Conquérant."
+  },
+  "ach-037": {
+    "name": "Moniale",
+    "description": "Déverrouillez Sester Genessa."
+  },
+  "ach-014": {
+    "name": "Beau bébé",
+    "description": "Déverrouillez l'enfant maudit."
+  },
+  "ach-015": {
+    "name": "Transpercexplosé",
+    "description": "Déverrouillez le balistazooka."
+  },
+  "ach-031": {
+    "name": "Enfer en chair",
+    "description": "Déverrouillez Lazlo."
+  },
+  "ach-023": {
+    "name": "Les ailes de la nuit",
+    "description": "Vainquez Sir Isaac, le Prince-érudit."
+  },
+  "ach-045": {
+    "name": "Géonavigation",
+    "description": "Trouvez tous les fragments de carte."
+  },
+  "ach-028": {
+    "name": "À en perdre la tête",
+    "description": "Vainquez Orrem, le Récupéré."
+  },
+  "ach-027": {
+    "name": "Mollo sur la gonflette",
+    "description": "Vainquez la progéniture de Malborn."
+  },
+  "ach-049": {
+    "name": "Seigneur de guerre",
+    "description": "Déverrouillez toutes les armes."
+  },
+  "ach-025": {
+    "name": "Loué soit-il !",
+    "description": "Vainquez le Monolithe."
+  },
+  "ach-042": {
+    "name": "Nourris-moi",
+    "description": "Faites en sorte qu'Egon trépasse."
+  },
+  "ach-047": {
+    "name": "Collectionneur d'enveloppes",
+    "description": "Déverrouillez toutes les enveloppes."
+  },
+  "ach-018": {
+    "name": "Rapporte-moi mes Ova",
+    "description": "Obtenez tous les Ova."
+  },
+  "ach-048": {
+    "name": "Des flingues, mais d'une force",
+    "description": "Déverrouillez toutes les armes secondaires."
+  },
+  "ach-052": {
+    "name": "Tronche de sac",
+    "description": "Tu n'as rien maîtrisé, et voici ta récompense. Plutôt futile, non ?",
+    "warning": "Épuise le dialogue de Baghead, assieds-toi près de ses fidèles, prends le Special Moonshine derrière toi et repose-le. Reparle-lui et réponds Oui à chaque question. Rejouable en NG+.",
+    "warningBefore": "de terminer sa chaîne de dialogues"
+  },
+  "ach-029": {
+    "name": "C'est fini, là ?",
+    "description": "Vainquez Zmey, l'Invité."
+  },
+  "ach-043": {
+    "name": "Ménage de printemps",
+    "description": "Purifiez toutes les balises."
+  },
+  "ach-019": {
+    "name": "Metalutha",
+    "description": "Jouez tous les morceaux de luth du jeu."
+  },
+  "ach-051": {
+    "name": "Ceci n'est pas un succès",
+    "description": "Terminez Mortal Shell II.",
+    "warning": "Finis les missables et les collectibles avant d'envoyer les Ova / de lancer NG+. Le monde reset.",
+    "warningBefore": "de lancer New Game+"
+  },
+  "ach-050": {
+    "name": "Ascension",
+    "description": "Découvrez le secret de la Mangue.",
+    "warning": "Le secret de la Mangue se rate si tu passes trop vite certaines zones. Fais-le avant NG+."
+  },
+  "ach-044": {
+    "name": "Non, même comme ça",
+    "description": "Réduisez le Golem de goudron à sa vie minimale.",
+    "warning": "Descends le Golem de goudron à 0 PV dans le prologue. Si tu te fais séparer du shell avant, c'est mort pour cette run et NG+ le skip.",
+    "warningBefore": "de quitter le combat du prologue"
+  },
+  "ach-039": {
+    "name": "Minéralogiste",
+    "description": "Trouvez toutes les fossilithes."
+  },
+  "ach-038": {
+    "name": "Parade proprement parfaite",
+    "description": "Parry parfait sur chaque tête du Captif sans nom.",
+    "warning": "Pendant le combat, perfect-guard les 7 têtes avant que le boss meure. Rejouable en NG+.",
+    "warningBefore": "de vaincre le Captif sans nom"
+  },
+  "ach-046": {
+    "name": "En quête du passé",
+    "description": "Visionnez tous les souvenirs d'enveloppes."
+  },
+  "ach-053": {
+    "name": "Nolife",
+    "description": "Déverrouillez tous les trophées pour Mortal Shell II."
+  },
+  "tarstone-egon-s-stone": {
+    "description": "Fragile"
+  },
+  "tarstone-glimpse-stone": {
+    "description": "Fragile"
+  },
+  "weapon-the-iconoclast": {
+    "name": "L'Iconoclaste"
+  },
+  "weapon-axe-and-dagger": {
+    "name": "Hache et dague"
+  },
+  "weapon-black-needle": {
+    "name": "Aiguille noire"
+  },
+  "weapon-clockwork-scythe": {
+    "name": "Faux mécanique"
+  },
+  "weapon-axatana": {
+    "name": "Katan'hache"
+  },
+  "weapon-great-martyr-s-blade": {
+    "name": "Grande lame du Martyr"
+  },
+  "weapon-veteran-s-battle-axe": {
+    "name": "Hache de guerre de vétéran"
+  },
+  "weapon-obsidian-hammer": {
+    "name": "Marteau d'obsidienne"
+  },
+  "sidearm-forgotten-crossbow": {
+    "name": "Arbalète oubliée"
+  },
+  "sidearm-troubadour-s-lute": {
+    "name": "Luth du troubadour"
+  },
+  "sidearm-cursed-child": {
+    "name": "Enfant maudit"
+  },
+  "sidearm-caged-hystrix": {
+    "name": "Hystrix en cage"
+  },
+  "sidearm-triarch-repeater": {
+    "name": "Triarche à répétition"
+  },
+  "sidearm-salvaged-trebuchaxe": {
+    "name": "Trébuchet à haches récupéré"
+  },
+  "sidearm-ballistazooka": {
+    "name": "Balistazooka"
+  },
+  "shell-tiel-the-acolyte": {
+    "name": "Tiel l'Acolyte"
+  },
+  "shell-gragu-the-insatiable": {
+    "name": "Gragu l'Insatiable"
+  },
+  "shell-eredrim-the-venerable": {
+    "name": "Eredrim le Vénérable"
+  },
+  "shell-sariel-the-endless": {
+    "name": "Sariel l'Éternelle"
+  },
+  "shell-proxima-the-broodseeker": {
+    "name": "Proxima la Cherche-couvée"
+  },
+  "shell-genessa-the-wayward": {
+    "name": "Genessa l'Égarée"
+  },
+  "shell-smert-the-apostate": {
+    "name": "Smert l'Apostat"
+  },
+  "shell-lazlo-the-justiciar": {
+    "name": "Lazlo le Justicier"
+  },
+  "boss-magdalena-the-lady-of-the-woods": {
+    "name": "Magdalena, Dame des Bois"
+  },
+  "boss-the-lost-child": {
+    "name": "L'Enfant perdu"
+  },
+  "boss-the-nameless-captive": {
+    "name": "Le Captif sans nom"
+  },
+  "boss-sir-isaac-the-scholar-prince": {
+    "name": "Sir Isaac, le Prince-érudit"
+  },
+  "boss-droeg-the-conquerer": {
+    "name": "Droeg, le Conquérant"
+  },
+  "boss-malborn-offspring": {
+    "name": "Progéniture de Malborn"
+  },
+  "boss-orrem-the-reclaimed": {
+    "name": "Orrem, le Récupéré"
+  },
+  "boss-the-monolith": {
+    "name": "Le Monolithe"
+  },
+  "boss-zmey-the-unbidden": {
+    "name": "Zmey, l'Invité"
+  },
+  "beacon-marrowkeep": {
+    "name": "Fort Medula"
+  },
+  "fragment-map-of-fainweald-1": {
+    "name": "Carte de Fainweald [1]"
+  },
+  "fragment-map-of-fainweald-2": {
+    "name": "Carte de Fainweald [2]"
+  },
+  "fragment-map-of-fainweald-3": {
+    "name": "Carte de Fainweald [3]"
+  },
+  "fragment-map-of-fainweald-4": {
+    "name": "Carte de Fainweald [4]"
+  },
+  "fragment-map-of-fainweald-5": {
+    "name": "Carte de Fainweald [5]"
+  },
+  "fragment-map-of-mammon-1": {
+    "name": "Carte de Mammon [1]"
+  },
+  "fragment-map-of-mammon-2": {
+    "name": "Carte de Mammon [2]"
+  },
+  "fragment-map-of-mammon-3": {
+    "name": "Carte de Mammon [3]"
+  },
+  "fragment-map-of-mammon-4": {
+    "name": "Carte de Mammon [4]"
+  },
+  "fragment-map-of-mammon-5": {
+    "name": "Carte de Mammon [5]"
+  },
+  "fragment-map-of-mammon-6": {
+    "name": "Carte de Mammon [6]"
+  }
+}

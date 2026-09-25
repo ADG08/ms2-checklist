@@ -1,0 +1,463 @@
+[
+  {
+    "id": "001",
+    "title": "You're More Than a Weapon",
+    "description": "Claim your first Shell, Weapon and Sidearm",
+    "category": "story",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "002",
+    "title": "Mid Summer?",
+    "description": "Enter the Festival",
+    "category": "missable",
+    "secret": false,
+    "missable": true,
+    "warning": {
+      "id": "mid-summer",
+      "before": "leaving the prologue",
+      "message": "Accept Marigold's flower crown in the prologue before you leave. This cannot be done in NG+."
+    }
+  },
+  {
+    "id": "003",
+    "title": "Home at Last",
+    "description": "Reach Marrowkeep",
+    "category": "story",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "004",
+    "title": "Haunting Times",
+    "description": "Watch your first Shell Memory",
+    "category": "collectible",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "005",
+    "title": "Deep Cuts",
+    "description": "Unlock Axe and Dagger",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "006",
+    "title": "Big Boi",
+    "description": "Unlock Great Martyr's Blade",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "007",
+    "title": "Point Taken",
+    "description": "Unlock Black Needle",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "008",
+    "title": "Like Clockwork",
+    "description": "Unlock the Clockwork Scythe",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "009",
+    "title": "Stop - Hammer Time",
+    "description": "Unlock the Obsidian Hammer",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "010",
+    "title": "Dual Wielding",
+    "description": "Unlock the Axatana",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "011",
+    "title": "Cut You Down to Size",
+    "description": "Unlock the Veteran's Battle Axe",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "012",
+    "title": "Spiked",
+    "description": "Unlock the Caged Hystrix",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "013",
+    "title": "Old Painless",
+    "description": "Unlock the Triarch Repeater",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "014",
+    "title": "Beautiful Baby",
+    "description": "Unlock the Cursed Child",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "015",
+    "title": "Speared",
+    "description": "Unlock the Ballistazooka",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "016",
+    "title": "Chop Chop",
+    "description": "Unlock the Salvaged Trebuchaxe",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "017",
+    "title": "Old School",
+    "description": "Unlock the Forgotten Crossbow",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "018",
+    "title": "Bring My Ova Back to Me",
+    "description": "Collect all of the Ova",
+    "category": "collectible",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "019",
+    "title": "Heavy Metal",
+    "description": "Play all Lute Tracks in the Game",
+    "category": "collectible",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "020",
+    "title": "Wheelie Good Time",
+    "description": "Defeat Magdalena, the Lady of the Woods",
+    "category": "boss",
+    "secret": true,
+    "missable": false,
+    "bossKey": "LadyOfTheWoods"
+  },
+  {
+    "id": "021",
+    "title": "Meat's Back on the Menu, Boys!",
+    "description": "Defeat The Lost Child",
+    "category": "boss",
+    "secret": true,
+    "missable": false,
+    "bossKey": "LostChild"
+  },
+  {
+    "id": "022",
+    "title": "Headcase",
+    "description": "Defeat The Nameless Captive",
+    "category": "boss",
+    "secret": true,
+    "missable": false,
+    "bossKey": "Swordman"
+  },
+  {
+    "id": "023",
+    "title": "Nightmare Fuel",
+    "description": "Defeat Sir Isaac, the Scholar-Prince",
+    "category": "boss",
+    "secret": true,
+    "missable": false,
+    "bossKey": "SirIsaac"
+  },
+  {
+    "id": "024",
+    "title": "Something in the deep...",
+    "description": "Defeat Hexapod",
+    "category": "boss",
+    "secret": true,
+    "missable": false,
+    "bossKey": "Hexapod"
+  },
+  {
+    "id": "025",
+    "title": "Praise him!",
+    "description": "Defeat The Monolith",
+    "category": "boss",
+    "secret": true,
+    "missable": false,
+    "bossKey": "Monolith"
+  },
+  {
+    "id": "026",
+    "title": "It burnssssssssss",
+    "description": "Defeat Droeg, the Conquerer",
+    "category": "boss",
+    "secret": true,
+    "missable": false,
+    "bossKey": "Droeg"
+  },
+  {
+    "id": "027",
+    "title": "Ultimate Gainz",
+    "description": "Defeat Malborn Offspring",
+    "category": "boss",
+    "secret": true,
+    "missable": false,
+    "bossKey": "MalbornOffspring"
+  },
+  {
+    "id": "028",
+    "title": "Lost Your Head",
+    "description": "Defeat Orrem, the Reclaimed",
+    "category": "boss",
+    "secret": true,
+    "missable": false,
+    "bossKey": "Orrem"
+  },
+  {
+    "id": "029",
+    "title": "It's over now?",
+    "description": "Defeat Zmey, the Unbidden",
+    "category": "boss",
+    "secret": true,
+    "missable": false,
+    "bossKey": "Zmey"
+  },
+  {
+    "id": "030",
+    "title": "Forever Alone?",
+    "description": "Unlock Tiel",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "031",
+    "title": "Down with the Thickness",
+    "description": "Unlock Lazlo",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "032",
+    "title": "Vengeance is Mine",
+    "description": "Unlock Eredrim",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "033",
+    "title": "The Alchemist",
+    "description": "Unlock Sariel",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "034",
+    "title": "Arrival",
+    "description": "Unlock Proxima",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "035",
+    "title": "My Brether",
+    "description": "Unlock Smert",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "036",
+    "title": "Heartless",
+    "description": "Unlock Gragu",
+    "category": "unlock",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "037",
+    "title": "Sester",
+    "description": "Unlock Sester Genessa",
+    "category": "unlock",
+    "secret": true,
+    "missable": false
+  },
+  {
+    "id": "038",
+    "title": "Peter's Perfect Parry",
+    "description": "Perfect Guard each one of The Nameless Captive's headspins",
+    "category": "missable",
+    "secret": true,
+    "missable": true,
+    "warning": {
+      "id": "perfect-parry",
+      "before": "defeating The Nameless Captive",
+      "message": "During the Nameless Captive fight, perfect-guard all 7 headspins before the boss dies. No specific seal is required. Retryable in NG+ if missed.",
+      "relatedBossKey": "Swordman",
+      "relatedAchievementId": "022"
+    }
+  },
+  {
+    "id": "039",
+    "title": "Stoned",
+    "description": "Find all Tarstones",
+    "category": "collectible",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "040",
+    "title": "Decked Out",
+    "description": "Reach the maximum bonding tier for a Shell at the Shellkeeper",
+    "category": "collectible",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "041",
+    "title": "Over 9000",
+    "description": "Max out a Weapon at the Tarforge",
+    "category": "collectible",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "042",
+    "title": "Feed Me",
+    "description": "Cause Egon to pass away",
+    "category": "missable",
+    "secret": true,
+    "missable": false
+  },
+  {
+    "id": "043",
+    "title": "So Fresh, So Clean",
+    "description": "Cleanse All Beacons",
+    "category": "collectible",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "044",
+    "title": "No, You Still Can't Win",
+    "description": "Take the Tar Golem to his Minimum Health",
+    "category": "missable",
+    "secret": true,
+    "missable": true,
+    "warning": {
+      "id": "tar-golem",
+      "before": "leaving the prologue Tar Golem fight",
+      "message": "Reduce the Tar Golem to 0 HP in the prologue. If you get severed first, the chance is gone for this playthrough and NG+ skips it."
+    }
+  },
+  {
+    "id": "045",
+    "title": "Sat Nav",
+    "description": "Find all Map Fragments",
+    "category": "collectible",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "046",
+    "title": "Seeking the Past",
+    "description": "Watch all Shell Memories",
+    "category": "collectible",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "047",
+    "title": "Shell Seeker",
+    "description": "Unlock all Shells",
+    "category": "collectible",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "048",
+    "title": "Guns. Lots of Guns",
+    "description": "Unlock all Sidearms",
+    "category": "collectible",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "049",
+    "title": "Lord of War",
+    "description": "Unlock all Weapons",
+    "category": "collectible",
+    "secret": false,
+    "missable": false
+  },
+  {
+    "id": "050",
+    "title": "Ascension",
+    "description": "Discover the secret of the Mango",
+    "category": "missable",
+    "secret": true,
+    "missable": false
+  },
+  {
+    "id": "051",
+    "title": "This is Not an Achievement",
+    "description": "Complete Mortal Shell II",
+    "category": "story",
+    "secret": false,
+    "missable": false,
+    "warning": {
+      "id": "ng-plus",
+      "before": "starting New Game+",
+      "message": "Finish missables and collectibles before sending Ova / entering NG+. The world resets."
+    }
+  },
+  {
+    "id": "052",
+    "title": "Baghead",
+    "description": "You've mastered nothing and this is your reward. Pretty pointless, eh?",
+    "category": "missable",
+    "secret": true,
+    "missable": true,
+    "warning": {
+      "id": "bag-holder",
+      "before": "finishing Baghead's dialogue chain",
+      "message": "Exhaust Baghead's dialogue, sit near his followers, pick up the Special Moonshine behind you and put it back. Speak to him again and answer Yes to every question. Retryable in NG+ if failed."
+    }
+  },
+  {
+    "id": "053",
+    "title": "No Lifer",
+    "description": "Unlock All Achievements for Mortal Shell II",
+    "category": "story",
+    "secret": false,
+    "missable": false
+  }
+]

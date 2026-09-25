@@ -1,0 +1,363 @@
+{
+  "ach-001": {
+    "name": "Eres más que un arma",
+    "description": "Hazte con tu primer receptáculo, arma y arma auxiliar."
+  },
+  "ach-003": {
+    "name": "Por fin en casa",
+    "description": "Llega hasta Fortuétano."
+  },
+  "ach-002": {
+    "name": "Verbena de verano",
+    "description": "Entra en el festival.",
+    "warning": "Coge la corona de flores de Marigold en el prologo antes de irte. No se puede en NG+.",
+    "warningBefore": "de salir del prologo"
+  },
+  "ach-030": {
+    "name": "¿Solo para siempre?",
+    "description": "Desbloquea a Tiel."
+  },
+  "ach-034": {
+    "name": "Llegada",
+    "description": "Desbloquea a Próxima."
+  },
+  "ach-004": {
+    "name": "Tiempos aciagos",
+    "description": "Mira tu primer recuerdo del receptáculo."
+  },
+  "ach-005": {
+    "name": "Cortes profundos",
+    "description": "Desbloquea el hacha y la daga."
+  },
+  "ach-017": {
+    "name": "Vieja escuela",
+    "description": "Desbloquea la ballesta olvidada."
+  },
+  "ach-020": {
+    "name": "Diversión en caballito",
+    "description": "Derrota a Magdalena, la Dama de los Bosques."
+  },
+  "ach-011": {
+    "name": "Bajar los humos",
+    "description": "Desbloquea el hacha de batalla de veterano."
+  },
+  "ach-032": {
+    "name": "La venganza es mía",
+    "description": "Desbloquea a Eredrim."
+  },
+  "ach-006": {
+    "name": "Chicarrona",
+    "description": "Desbloquea la hoja del gran mártir."
+  },
+  "ach-021": {
+    "name": "¡Vuelva a haber carne en el menú, muchachos!",
+    "description": "Derrota al Niño perdido."
+  },
+  "ach-035": {
+    "name": "Hermano mío",
+    "description": "Desbloquea a Smert."
+  },
+  "ach-040": {
+    "name": "Engalanado",
+    "description": "Alcanza el nivel máximo de vínculo de un receptáculo en el guardarreceptáculos."
+  },
+  "ach-036": {
+    "name": "Despiadado",
+    "description": "Desbloquea a Gragu."
+  },
+  "ach-016": {
+    "name": "Deprisa",
+    "description": "Desbloquea la trabucacha rescatada."
+  },
+  "ach-022": {
+    "name": "Demente",
+    "description": "Derrota al Cautivo sin nombre."
+  },
+  "ach-010": {
+    "name": "Dos armas",
+    "description": "Desbloquea la hachatana."
+  },
+  "ach-007": {
+    "name": "Puntada sin hilo",
+    "description": "Desbloquea la aguja negra."
+  },
+  "ach-013": {
+    "name": "La Impaciente",
+    "description": "Desbloquea el repetido triarca."
+  },
+  "ach-008": {
+    "name": "Como un reloj",
+    "description": "Desbloquea la guadaña mecánica."
+  },
+  "ach-012": {
+    "name": "Adulterado",
+    "description": "Desbloquea el hystrix enjaulado."
+  },
+  "ach-033": {
+    "name": "El alquimista",
+    "description": "Desbloquea a Sariel."
+  },
+  "ach-041": {
+    "name": "A tope",
+    "description": "Maximiza un arma en la forja de tar."
+  },
+  "ach-009": {
+    "name": "La hora del martillo",
+    "description": "Desbloquea el martillo de obsidiana."
+  },
+  "ach-024": {
+    "name": "Algo en las profundidades...",
+    "description": "Derrota a Hexapod."
+  },
+  "ach-026": {
+    "name": "Quemaaa",
+    "description": "Derrota a Droeg, el Conquistador."
+  },
+  "ach-037": {
+    "name": "Hermana",
+    "description": "Desbloquea a Sester Genessa."
+  },
+  "ach-014": {
+    "name": "Bebé precioso",
+    "description": "Desbloquea el niño maldito."
+  },
+  "ach-015": {
+    "name": "Ensartado",
+    "description": "Desbloquea el ballestazuca."
+  },
+  "ach-031": {
+    "name": "Tallas grandes",
+    "description": "Desbloquea a Lazlo."
+  },
+  "ach-023": {
+    "name": "Material de pesadillas",
+    "description": "Derrota a Sir Isaac, el Príncipe erudito."
+  },
+  "ach-045": {
+    "name": "Navegación por satélite",
+    "description": "Encuentra todos los fragmentos de mapa."
+  },
+  "ach-028": {
+    "name": "Has perdido la cabeza",
+    "description": "Derrota a Orrem, el Reclamado."
+  },
+  "ach-027": {
+    "name": "Ganancias supremas",
+    "description": "Derrota a la progenie de Malborn."
+  },
+  "ach-049": {
+    "name": "Señor de la guerra",
+    "description": "Desbloquea todas las armas."
+  },
+  "ach-025": {
+    "name": "¡Alabado sea!",
+    "description": "Derrota al Monolito."
+  },
+  "ach-042": {
+    "name": "Aliméntame",
+    "description": "Haz que Egon fallezca."
+  },
+  "ach-047": {
+    "name": "Buscarreceptáculos",
+    "description": "Desbloquea todos los receptáculos."
+  },
+  "ach-018": {
+    "name": "Devuélveme mis óvulos",
+    "description": "Recoge todos los óvulos."
+  },
+  "ach-048": {
+    "name": "Armas, montones de ellas",
+    "description": "Desbloquea todas las armas auxiliares."
+  },
+  "ach-052": {
+    "name": "Testasaco",
+    "description": "No has dominado nada y esta es tu recompensa. Bastante inútil, ¿verdad?",
+    "warning": "Agota el dialogo de Baghead, sientate cerca de sus seguidores, coge el Special Moonshine detras de ti y devuelvelo. Habla otra vez y responde Si a todo. Se puede repetir en NG+.",
+    "warningBefore": "de terminar su cadena de dialogos"
+  },
+  "ach-029": {
+    "name": "¿Ha acabado ya?",
+    "description": "Derrota a Zmey, el Indeseado."
+  },
+  "ach-043": {
+    "name": "Fresco y limpio",
+    "description": "Purifica todas las almenaras."
+  },
+  "ach-019": {
+    "name": "Puro metal",
+    "description": "Toca todos los temas para el laúd del juego."
+  },
+  "ach-051": {
+    "name": "Esto no es un logro",
+    "description": "Completa Mortal Shell II.",
+    "warning": "Termina missables y coleccionables antes de enviar los Ova / entrar en NG+. El mundo se reinicia.",
+    "warningBefore": "de empezar New Game+"
+  },
+  "ach-050": {
+    "name": "Ascensión",
+    "description": "Descubre el secreto del Mango.",
+    "warning": "El secreto del Mango se pierde si pasas ciertas zonas demasiado rapido. Hazlo antes de NG+."
+  },
+  "ach-044": {
+    "name": "No, ya no puedes ganar",
+    "description": "Lleva al gólem de alquitrán a su salud mínima.",
+    "warning": "Baja al golem de alquitrán a 0 de vida en el prologo. Si te separan del shell antes, se acaba para esta partida y NG+ se lo salta.",
+    "warningBefore": "de salir del combate del prologo"
+  },
+  "ach-039": {
+    "name": "De piedra",
+    "description": "Encuentra todas las piedras de tar."
+  },
+  "ach-038": {
+    "name": "Desvío perfecto de Peter",
+    "description": "Desvía a la perfección cada giro de cabeza del Cautivo sin nombre.",
+    "warning": "Durante el combate, perfect-guard las 7 cabezas antes de que muera el jefe. Se puede repetir en NG+.",
+    "warningBefore": "de derrotar al Cautivo sin nombre"
+  },
+  "ach-046": {
+    "name": "Buscando el pasado",
+    "description": "Mira todos los recuerdos de receptáculos."
+  },
+  "ach-053": {
+    "name": "Sal a vivir un poco",
+    "description": "Desbloquea todos los trofeos de Mortal Shell II."
+  },
+  "tarstone-egon-s-stone": {
+    "description": "Frágil"
+  },
+  "tarstone-glimpse-stone": {
+    "description": "Frágil"
+  },
+  "weapon-the-iconoclast": {
+    "name": "El Iconoclasta"
+  },
+  "weapon-axe-and-dagger": {
+    "name": "Hacha y daga"
+  },
+  "weapon-black-needle": {
+    "name": "Aguja negra"
+  },
+  "weapon-clockwork-scythe": {
+    "name": "Guadaña mecánica"
+  },
+  "weapon-axatana": {
+    "name": "Hachatana"
+  },
+  "weapon-great-martyr-s-blade": {
+    "name": "Hoja del gran mártir"
+  },
+  "weapon-veteran-s-battle-axe": {
+    "name": "Hacha de batalla de veterano"
+  },
+  "weapon-obsidian-hammer": {
+    "name": "Martillo de obsidiana"
+  },
+  "sidearm-forgotten-crossbow": {
+    "name": "Ballesta olvidada"
+  },
+  "sidearm-troubadour-s-lute": {
+    "name": "Laúd del trovador"
+  },
+  "sidearm-cursed-child": {
+    "name": "Niño maldito"
+  },
+  "sidearm-caged-hystrix": {
+    "name": "Hystrix enjaulado"
+  },
+  "sidearm-triarch-repeater": {
+    "name": "Repetido triarca"
+  },
+  "sidearm-salvaged-trebuchaxe": {
+    "name": "Trabucacha rescatada"
+  },
+  "sidearm-ballistazooka": {
+    "name": "Ballestazuca"
+  },
+  "shell-tiel-the-acolyte": {
+    "name": "Tiel el Acólito"
+  },
+  "shell-gragu-the-insatiable": {
+    "name": "Gragu el Insaciable"
+  },
+  "shell-eredrim-the-venerable": {
+    "name": "Eredrim el Venerable"
+  },
+  "shell-sariel-the-endless": {
+    "name": "Sariel la Eterna"
+  },
+  "shell-proxima-the-broodseeker": {
+    "name": "Próxima la Buscanidada"
+  },
+  "shell-genessa-the-wayward": {
+    "name": "Genessa la Descarriada"
+  },
+  "shell-smert-the-apostate": {
+    "name": "Smert el Apóstata"
+  },
+  "shell-lazlo-the-justiciar": {
+    "name": "Lazlo el Justiciero"
+  },
+  "boss-magdalena-the-lady-of-the-woods": {
+    "name": "Magdalena, la Dama de los Bosques"
+  },
+  "boss-the-lost-child": {
+    "name": "El Niño perdido"
+  },
+  "boss-the-nameless-captive": {
+    "name": "El Cautivo sin nombre"
+  },
+  "boss-sir-isaac-the-scholar-prince": {
+    "name": "Sir Isaac, el Príncipe erudito"
+  },
+  "boss-droeg-the-conquerer": {
+    "name": "Droeg, el Conquistador"
+  },
+  "boss-malborn-offspring": {
+    "name": "Progenie de Malborn"
+  },
+  "boss-orrem-the-reclaimed": {
+    "name": "Orrem, el Reclamado"
+  },
+  "boss-the-monolith": {
+    "name": "El Monolito"
+  },
+  "boss-zmey-the-unbidden": {
+    "name": "Zmey, el Indeseado"
+  },
+  "beacon-marrowkeep": {
+    "name": "Fortuétano"
+  },
+  "fragment-map-of-fainweald-1": {
+    "name": "Mapa de Fainweald [1]"
+  },
+  "fragment-map-of-fainweald-2": {
+    "name": "Mapa de Fainweald [2]"
+  },
+  "fragment-map-of-fainweald-3": {
+    "name": "Mapa de Fainweald [3]"
+  },
+  "fragment-map-of-fainweald-4": {
+    "name": "Mapa de Fainweald [4]"
+  },
+  "fragment-map-of-fainweald-5": {
+    "name": "Mapa de Fainweald [5]"
+  },
+  "fragment-map-of-mammon-1": {
+    "name": "Mapa de Mammon [1]"
+  },
+  "fragment-map-of-mammon-2": {
+    "name": "Mapa de Mammon [2]"
+  },
+  "fragment-map-of-mammon-3": {
+    "name": "Mapa de Mammon [3]"
+  },
+  "fragment-map-of-mammon-4": {
+    "name": "Mapa de Mammon [4]"
+  },
+  "fragment-map-of-mammon-5": {
+    "name": "Mapa de Mammon [5]"
+  },
+  "fragment-map-of-mammon-6": {
+    "name": "Mapa de Mammon [6]"
+  }
+}
