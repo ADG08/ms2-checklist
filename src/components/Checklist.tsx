@@ -47,7 +47,8 @@ export function Checklist({ section, title, items, checked, stats, onToggle }: P
       <header className="site-head">
         <div>
           <h1>{t("checklist.heading", { section: title })}</h1>
-          <p className="site-intro">{t("checklist.intro")}</p>
+          <p className="site-intro">{section === "beacon" ? t("checklist.beaconIntro") : t("checklist.intro")}</p>
+          {section === "beacon" ? <p className="site-disclaimer">{t("checklist.beaconNote")}</p> : null}
           <div className="site-head-meta">
             <p>{subtitle}</p>
             <button type="button" className="site-hide" aria-pressed={hideDone} onClick={() => setHideDone((value) => !value)}>

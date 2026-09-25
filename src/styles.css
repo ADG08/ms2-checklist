@@ -291,6 +291,7 @@ button { background: none; border: 0; padding: 0; cursor: pointer; }
 }
 .site-head p { margin: 0; color: var(--dim); font-size: .85rem; }
 .site-head .site-intro { max-width: 72ch; margin-top: 8px; line-height: 1.55; }
+.site-head .site-disclaimer { max-width: 72ch; margin-top: 8px; color: var(--gold); line-height: 1.55; }
 .site-head-meta {
   display: flex;
   flex-wrap: wrap;
@@ -727,6 +728,8 @@ html, body { overflow-x: hidden; }
   .site-body.has-rail { grid-template-columns: 260px minmax(0, 1fr); }
   .site-rail-label, .site-overall, .site-bar, .site-save { margin-left: 22px; margin-right: 22px; }
   .site-rail nav button { padding: 0 22px; letter-spacing: .14em; }
+  .site-head h1 { max-width: 28ch; font-size: 1.25rem; letter-spacing: .1em; }
+  .site-head .site-intro { max-width: 50ch; }
 }
 
 @media (max-width: 860px) {

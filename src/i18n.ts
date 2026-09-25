@@ -64,6 +64,8 @@ const resources = {
       checklist: {
         heading: "Checklist Mortal Shell II : {{section}}",
         intro: "Suis ta progression dans Mortal Shell II, coche chaque élément ou importe ta sauvegarde localement. Aucune donnée n'est envoyée.",
+        beaconIntro: "Les 46 beacons à purifier pour le succès So Fresh, So Clean. Marrowkeep, Widow's Overlook et Outskirts of Mammon ne comptent pas.",
+        beaconNote: "Cette liste n'est pas liée à l'import de save. Coche les beacons à la main.",
         search: "Filtrer...",
         hideDone: "Masquer ce qui est fait",
         onlyMissable: "Missables",
@@ -167,6 +169,8 @@ const resources = {
       checklist: {
         heading: "Mortal Shell II Checklist: {{section}}",
         intro: "Track your Mortal Shell II progress, check off every item or import your save locally. No data ever leaves your browser.",
+        beaconIntro: "The 46 beacons you need to cleanse for So Fresh, So Clean. Marrowkeep, Widow's Overlook and Outskirts of Mammon do not count.",
+        beaconNote: "This list is not linked to save import. Check beacons off by hand.",
         search: "Filter...",
         hideDone: "Hide completed",
         onlyMissable: "Missables",
@@ -270,6 +274,8 @@ const resources = {
       checklist: {
         heading: "Checklist de Mortal Shell II: {{section}}",
         intro: "Sigue tu progreso en Mortal Shell II, marca cada elemento o importa tu partida localmente. Ningún dato sale de tu navegador.",
+        beaconIntro: "Los 46 beacons que hay que purificar para So Fresh, So Clean. Fortuétano, Widow's Overlook y Outskirts of Mammon no cuentan.",
+        beaconNote: "Esta lista no está ligada a la importación de partida. Márcalos a mano.",
         search: "Filtrar...",
         hideDone: "Ocultar lo completado",
         onlyMissable: "Missables",

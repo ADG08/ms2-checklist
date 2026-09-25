@@ -124,15 +124,12 @@ const SAVE_VALUES: Readonly<Record<MapPinKind, (save: ExtractedSave) => readonly
     ...save.mapItems,
     ...save.mapPieceReveals.map((value) => value.replace(/^MapPieceReveal_/, "")),
   ],
-  beacon: (save) =>
-    [...save.unlockedLandingAreas, ...save.cleansedLandingAreas].map((value) =>
-      value.replace(/^LandingArea_/, "").replace(/^CheckPoint_/, ""),
-    ),
+  beacon: () => [],
 };
 
 type DerivedRule =
   | Readonly<{ type: "fromLinkedItems"; skip: readonly string[] }>
-  | Readonly<{ type: "sectionComplete"; section: MapPinKind; achievementId: string }>
+  | Readonly<{ type: "sectionComplete"; section: MapPinKind; achievementId: string; fillSection?: boolean }>
   | Readonly<{ type: "anyInSections"; sections: readonly MapPinKind[]; achievementId: string }>
   | Readonly<{ type: "allAchievements"; except: readonly string[]; achievementId: string }>;
 
@@ -141,7 +138,7 @@ const PLATINUM = "053";
 
 const derivedRules: readonly DerivedRule[] = [
   { type: "fromLinkedItems", skip: [STARTER, PLATINUM] },
-  { type: "sectionComplete", section: "beacon", achievementId: "043" },
+  { type: "sectionComplete", section: "beacon", achievementId: "043", fillSection: false },
   { type: "sectionComplete", section: "tarstone", achievementId: "039" },
   { type: "sectionComplete", section: "fragment", achievementId: "045" },
   { type: "sectionComplete", section: "shell", achievementId: "047" },
@@ -241,7 +238,16 @@ function itemMatchesSave(
   const fromSave = [item.name, ...(item.aliases ?? []), ...(SAVE_IDS[item.id] ?? [])].some((id) =>
     buckets[kind].has(normalizeName(id)),
   );
-  return fromSave || (item.achievementId !== undefined && earned.has(item.achievementId));
+  if (fromSave || (item.achievementId !== undefined && earned.has(item.achievementId))) {
+    return true;
+  }
+  return derivedRules.some(
+    (rule) =>
+      rule.type === "sectionComplete" &&
+      rule.section === kind &&
+      rule.fillSection !== false &&
+      earned.has(rule.achievementId),
+  );
 }
 
 export function mergeSaveChecks(

@@ -181,7 +181,7 @@
   },
   "ach-043": {
     "name": "Ménage de printemps",
-    "description": "Purifiez toutes les balises."
+    "description": "Purifiez toutes les balises. Seuls 46 comptent ; Fort Medula, Widow's Overlook et Outskirts of Mammon sont déjà purifiés."
   },
   "ach-019": {
     "name": "Metalutha",
@@ -323,6 +323,15 @@
   },
   "boss-zmey-the-unbidden": {
     "name": "Zmey, l'Invité"
+  },
+  "beacon-village-outskirts": {
+    "name": "Abords du village"
+  },
+  "beacon-disciples-grotto": {
+    "name": "Grotte des disciples"
+  },
+  "beacon-gate-of-infinity": {
+    "name": "Porte de l'Infini"
   },
   "beacon-marrowkeep": {
     "name": "Fort Medula"

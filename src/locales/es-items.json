@@ -181,7 +181,7 @@
   },
   "ach-043": {
     "name": "Fresco y limpio",
-    "description": "Purifica todas las almenaras."
+    "description": "Purifica todas las almenaras. Solo cuentan 46; Fortuétano, Widow's Overlook y Outskirts of Mammon ya están purificados."
   },
   "ach-019": {
     "name": "Puro metal",
@@ -323,6 +323,15 @@
   },
   "boss-zmey-the-unbidden": {
     "name": "Zmey, el Indeseado"
+  },
+  "beacon-village-outskirts": {
+    "name": "Afueras del pueblo"
+  },
+  "beacon-disciples-grotto": {
+    "name": "Gruta de los discipulos"
+  },
+  "beacon-gate-of-infinity": {
+    "name": "Puerta del Infinito"
   },
   "beacon-marrowkeep": {
     "name": "Fortuétano"
