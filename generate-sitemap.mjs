@@ -2,10 +2,11 @@ import { writeFile } from "node:fs/promises";
 
 const origin = "https://ms2checklist.com";
 const languages = ["fr", "en", "es"];
-const sections = ["shells", "weapons", "sidearms", "beacons", "tarstones", "bosses", "fragments", "achievements"];
+const sections = ["", "weapons", "sidearms", "beacons", "tarstones", "bosses", "fragments", "achievements"];
 
 function url(language, section) {
-  return `${origin}${language === "fr" ? "" : `/${language}`}/${section}`;
+  const prefix = language === "fr" ? "" : `/${language}`;
+  return section ? `${origin}${prefix}/${section}` : `${origin}${prefix}/`;
 }
 
 const entries = sections.flatMap((section) =>
@@ -22,7 +23,7 @@ const entries = sections.flatMap((section) =>
 ${alternates}
     <xhtml:link rel="alternate" hreflang="x-default" href="${url("fr", section)}" />
     <changefreq>weekly</changefreq>
-    <priority>${section === "achievements" ? "1.0" : "0.9"}</priority>
+    <priority>${section === "" || section === "achievements" ? "1.0" : "0.9"}</priority>
   </url>`;
   }),
 );
