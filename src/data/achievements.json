@@ -328,7 +328,7 @@
   {
     "id": "039",
     "title": "Stoned",
-    "description": "Find all Tarstones",
+    "description": "Find all Tarstones. Only 73 count; extras on this list do not all count.",
     "category": "collectible",
     "secret": false,
     "missable": false

@@ -41,14 +41,23 @@ export function Checklist({ section, title, items, checked, stats, onToggle }: P
   }, [section]);
 
   const subtitle = stats.done === stats.total ? t("ui.complete") : t("ui.remaining", { count: stats.total - stats.done });
+  let intro = t("checklist.intro");
+  let note: string | null = null;
+  if (section === "beacon") {
+    intro = t("checklist.beaconIntro");
+    note = t("checklist.beaconNote");
+  } else if (section === "tarstone") {
+    intro = t("checklist.tarstoneIntro");
+    note = t("checklist.tarstoneNote");
+  }
 
   return (
     <>
       <header className="site-head">
         <div>
           <h1>{t("checklist.heading", { section: title })}</h1>
-          <p className="site-intro">{section === "beacon" ? t("checklist.beaconIntro") : t("checklist.intro")}</p>
-          {section === "beacon" ? <p className="site-disclaimer">{t("checklist.beaconNote")}</p> : null}
+          <p className="site-intro">{intro}</p>
+          {note ? <p className="site-disclaimer">{note}</p> : null}
           <div className="site-head-meta">
             <p>{subtitle}</p>
             <button type="button" className="site-hide" aria-pressed={hideDone} onClick={() => setHideDone((value) => !value)}>
